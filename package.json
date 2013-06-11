@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "http://github.com/roccosportal/less-watchr",
   "repository" : {
 		"type": "git",
 		"url": "http://github.com/roccosportal/less-watchr.git"
@@ -15,5 +16,10 @@
     "file",
     "watcher"
   ],
+  "dependencies": {
+		"watchr": "~2.4.3",
+		"colors": "~0.6.0",
+		"optimist": "~0.5.2",
+  },
   "author": "roccosportal"
 }
