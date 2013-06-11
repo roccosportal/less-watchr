@@ -1,0 +1,19 @@
+{
+  "name": "less-watchr",
+  "version": "1.0.0",
+  "description": "a simple file watcher for less files",
+  "main": "./lib/less-watchr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository" : {
+		"type": "git",
+		"url": "http://github.com/roccosportal/less-watchr.git"
+  },
+  "keywords": [
+    "less",
+    "file",
+    "watcher"
+  ],
+  "author": "roccosportal"
+}
