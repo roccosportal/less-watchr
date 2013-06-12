@@ -1,6 +1,6 @@
 {
   "name": "less-watchr",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "a simple file watcher for less files",
   "main": "./lib/less-watchr.js",
   "scripts": {
