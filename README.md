@@ -7,7 +7,6 @@ a simple file watcher for less files
 
 ```
 npm install -g less-watchr
-
 ``` 
 
 ## Usage
@@ -22,10 +21,9 @@ folder/
 
 ```
 less-watchr --path folder/style.less
-
 ``` 
 
-Listens at the `folder/style.less` file and recompile it when changes occur. Creates/updates the file `folder/style.css`.
+Listens at the `folder/style.less` file and recompiles it when changes occur. Creates/updates the file `folder/style.css`.
 
 ### Example 2
 
@@ -37,7 +35,6 @@ folder/
 
 ```
 less-watchr --path folder
-
 ``` 
 
 Listens at the `folder` folder and recompile the .less when changes occur. Creates/updates the file `folder/style.css` or  `folder/style2.css`.
@@ -54,7 +51,6 @@ folder/
 
 ```
 less-watchr --path folder --fileToCompile folder/style.less
-
 ``` 
 
 Listens at the `folder` folder and recompiles only the style.less after changes made at any .less file. Creates/updates the file `folder/style.css`.
@@ -78,7 +74,6 @@ folder/
 
 ```
 less-watchr --config less-watchr-config.json
-
 ``` 
 
 less-watchr-config.json
@@ -88,15 +83,15 @@ less-watchr-config.json
     "path" : "folder",
     "outputFilename" : "$1.css",
     "fileToCompileMap" : [
-                          {
-                              "path": "folder/folder1/",
-                              "fileToCompile" : "folder/folder1/style.less"
-                          },
-                          {
-                              "path": "folder/folder2",
-                              "fileToCompile" : "folder/folder2/style.less"
-                          }
-                        ]
+	      {
+	          "path": "folder/folder1/",
+	          "fileToCompile" : "folder/folder1/style.less"
+	      },
+	      {
+	          "path": "folder/folder2",
+	          "fileToCompile" : "folder/folder2/style.less"
+	      }
+    ]
 }
 ``` 
 
@@ -122,7 +117,6 @@ folder/
 
 ```
 less-watchr --config less-watchr-config.json
-
 ``` 
 
 less-watchr-config.json
@@ -132,22 +126,22 @@ less-watchr-config.json
     "path" : "folder",
     "outputFilename" : "$1.css",
     "fileToCompileMap" : [
-                          {
-                              "path": "folder/folder1/",
-                              "fileToCompile" : "folder/folder1/style.less"
-                          },
-                          {
-                              "path": "folder/folder2",
-                              "fileToCompile" : "folder/folder2/style.less"
-                          }
-                          {
-                              "path": "folder/global",
-                              "fileToCompile" : [
-                              	"folder/folder1/style.less",
-                              	"folder/folder2/style.less"
-                              ]
-                          }
-                        ]
+          {
+              "path": "folder/folder1/",
+              "fileToCompile" : "folder/folder1/style.less"
+          },
+          {
+              "path": "folder/folder2",
+              "fileToCompile" : "folder/folder2/style.less"
+          },
+          {
+              "path": "folder/global",
+              "fileToCompile" : [
+              	"folder/folder1/style.less",
+              	"folder/folder2/style.less"
+              ]
+          }
+    ]
 }
 ```
 
@@ -162,7 +156,6 @@ Option `path` can be an array.
 
 ```
 less-watchr --path folder1 -path folder2
-
 ``` 
 or
 ``` javascript
