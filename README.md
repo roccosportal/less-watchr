@@ -171,14 +171,12 @@ You can define the ouput file name of the lessc compiler.
 
 ```
 less-watchr -outputFilename "$1.less.css"
-
 ```
 
 or
 
 ```
 less-watchr -outputFilename "hello.css"
-
 ``` 
 
 Same in the config file.
