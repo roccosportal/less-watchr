@@ -184,3 +184,10 @@ Same in the config file.
 ### options
 
 With the `options` you can pass options to the lessc compiler.
+
+```
+--options="--yui-compress"
+``` 
+
+*Notice the **=** when you this argument*
+
