@@ -189,5 +189,5 @@ With the `options` you can pass options to the lessc compiler.
 --options="--yui-compress"
 ``` 
 
-*Notice the **=** when you this argument*
+*Notice the __=__ when you this argument*
 
