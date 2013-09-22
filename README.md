@@ -170,13 +170,29 @@ You can define the ouput file name of the lessc compiler.
 `$1` will be replaced with the .less name.
 
 ```
-less-watchr -outputFilename "$1.less.css"
+less-watchr --outputFilename "$1.less.css"
 ```
 
 or
 
 ```
-less-watchr -outputFilename "hello.css"
+less-watchr --outputFilename "hello.css"
+``` 
+
+now, if you want to set another path for outputfile, the path must be relative to the .less file location:
+
+```
+folder/
+		css/
+			style.css
+		folder1/
+			style.less
+			other.less
+
+``` 
+
+```
+less-watchr --path folder/folder1/styles.less --outputFilename ../css/styles.css
 ``` 
 
 Same in the config file.
